@@ -1,4 +1,6 @@
 import os
+import sys
+import django
 from pathlib import Path
 from decouple import config, Csv
 from datetime import timedelta
@@ -64,9 +66,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME', default='portfolio_db'),
-        'USER': config('DB_USER', default='portfolio_user'),
-        'PASSWORD': config('DB_PASSWORD', default='password'),
+        'NAME': config('DB_NAME', default='hello_django_dev'),
+        'USER': config('DB_USER', default='hello_django'),
+        'PASSWORD': config('DB_PASSWORD', default='your_secure_password'),
         'HOST': config('DB_HOST', default='localhost'),
         'PORT': config('DB_PORT', default='5432'),
     }
