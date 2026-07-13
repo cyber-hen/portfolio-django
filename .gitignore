@@ -50,8 +50,13 @@ db.sqlite3-journal
 *.swo
 *~
 .DS_Store
+.gitignore
 
 # Testing
 .coverage
 .pytest_cache/
 htmlcov/
+
+
+# Dockerfiles
+.dockerignore
