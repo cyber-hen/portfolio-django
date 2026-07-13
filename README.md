@@ -31,6 +31,9 @@ portfolio-django/
 ├── manage.py                  # Django management
 ├── requirements.txt           # Python dependencies
 ├── .env.example               # Environment variables template
+├── nginx/                     # Nginx Configuration
+├── Dockerfile                 # Docker Image Configureation
+├── comopose.yaml              # Container Configuration
 └── README.md                  # This file
 ```
 
